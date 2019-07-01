@@ -48,11 +48,13 @@ public class Sender implements Runnable {
 //
 //                        BufferedImage oldImage = ImageIO.read(Files.newInputStream(Paths.get("image.jpg")));
 //                        File result = new File("difference.jpg");
-//                        BufferedImage drawnDifferences = new ImageComparison( oldImage, capture, result ).compareImages();
-//
-////                        BufferedImage difference = getDifferenceImage(oldImage, capture);
-////                        File file = new File("difference.jpg");
-////                        ImageIO.write(difference, "jpg", file);
+//                        BufferedImage drawnDifferences = new ImageComparison( oldImage, capture, result )
+//                                .compareImages()
+//                                .getResult();
+
+//                        BufferedImage difference = getDifferenceImage(oldImage, capture);
+//                        File file = new File("difference.jpg");
+//                        ImageIO.write(difference, "jpg", file);
 //                    }
                     ImageIO.write(capture, "jpg", bScrn);
                     bScrn.close();
